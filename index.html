@@ -1,0 +1,1746 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jay Prakash Mahto</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/JVJplus/resume/master/images/favicon.jpg" type="image/jpg"
+        sizes="16x16">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        #body-header {
+            width: 100vw;
+            height: 65vh;
+
+            /*background-image: url(images/bluredLights.jpg);*/
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            background-attachment: fixed;
+            /*background-size: 100% 100%;*/
+            background-color: white;
+        }
+
+        /*Dropdown Menu*/
+
+        nav div {
+            display: inline-block;
+        }
+
+        #dropdown-container {
+            display: none;
+            height: auto;
+            width: auto;
+            position: absolute;
+            left: 4%;
+            z-index: 2;
+        }
+
+        #dropdown-icon {
+            width: 100%;
+        }
+
+        #bars {
+            color: white;
+            /*margin-left: 35%;*/
+            font-size: 1.4em;
+        }
+
+        #dropdown-container:hover #dropdown-menu {
+            display: inline-block;
+        }
+
+        #dropdown-menu {
+            width: 100%;
+            background-color: #828470;
+            box-shadow: 0px 4px 8px 1px #535547;
+            display: none;
+        }
+
+        #dropdown-menu ul {
+            margin: 1%;
+            padding: 10%;
+            display: inline-block;
+        }
+
+        #dropdown-menu li {
+            width: auto;
+            list-style: none;
+            margin: 0;
+            margin-bottom: 8%;
+            padding: 0;
+            display: block;
+        }
+
+        /*Horizontal Lists*/
+        .horizontal-list {
+            text-align: center;
+            margin: 0;
+        }
+
+        #horizontalList {
+            font-size: 1em;
+            position: absolute;
+            width: 100vw;
+            margin-left: -4%;
+        }
+
+        .horizontal-list-item {
+            list-style: none;
+            display: inline-block;
+            font-weight: 100;
+            margin-left: 20px;
+            font-size: 0.8em;
+        }
+
+        nav ul li {
+            margin-top: 2%;
+        }
+
+        nav ul a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+            transition: color 1s, border-bottom 4s;
+            border: 1px solid transparent;
+            /*for box model*/
+        }
+
+        nav ul a:hover {
+            color: lightgrey;
+            border-bottom: 1px solid black;
+        }
+
+
+        /*Name Jay Prakash*/
+        #my-name {
+            text-align: center;
+            /*font-family: ubuntu;*/
+            font-family: 'Ubuntu';
+            color: white;
+            /*font-size: 4.4vw;*/
+            /*margin-top: 120px;*/
+            margin-top: 10%;
+            font-size: 3.7em;
+            position: relative;
+
+        }
+
+        /*Social*/
+        #social {
+            text-align: centre;
+            margin: auto;
+            margin-top: -2%;
+            margin-left: -5%;
+            font-size: 1em;
+
+        }
+
+        #social i {
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #social i:hover {
+            box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+        }
+
+        /*Profile Picture*/
+        #dp-div {
+            width: 12em;
+            height: 12em;
+            margin: auto;
+            margin-top: -17vh;
+        }
+
+        #dp {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0px 0px 10px 5px rgba(38, 39, 53, 0.3);
+
+        }
+
+        /*General*/
+        section {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section:nth-child(2n) {
+            background-color: white;
+        }
+
+        section:nth-child(2n+1) {
+            background-color: #F1EDFF;
+        }
+
+
+        /*About*/
+        #about-container {
+            /*background-color: red;*/
+        }
+
+        #about {
+            /*margin: 5vh 20vw;*/
+            /*border: 2px solid black;*/
+            position: relative;
+            width: 60%;
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 3%;
+            line-height: 180%;
+        }
+
+        .about-para {
+            text-align: center;
+            font-size: 1.1em;
+            font-family: sans-serif;
+            color: #808080;
+        }
+
+        .about-para span {
+            color: #2857a4;
+            font-weight: bold;
+        }
+
+
+        /*Skills*/
+
+        .section-header {
+            font-size: 2.7em;
+            margin-top: 5%;
+            margin-bottom: 4%;
+            color: #2857a4;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+        #skills i span {
+            font-family: sans-serif;
+            font-weight: normal;
+        }
+
+        /*Progress*/
+        .skills-display {
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 6%;
+            /*background-color: red;*/
+        }
+
+        .behind-box {
+            height: 2.3em;
+            width: 12em;
+            background-color: lightgrey;
+            border-radius: 3vw 3vw 3vw 3vw;
+            overflow: auto;
+            /*Tricky*/
+            box-shadow: 1px 4px 5px darkgrey inset;
+            margin: 1.6em;
+        }
+
+        .upper-box {
+            height: inherit;
+            border-radius: 3vw 0 0 3vw;
+            box-shadow: 1px 0px 10px #838383;
+        }
+
+        .skill-name {
+            color: white;
+            font-size: auto;
+            position: absolute;
+            font-weight: lighter;
+            padding: 0.7%;
+            font-family: sans-serif;
+        }
+
+        #cpp-skill {
+            width: 90%;
+            background-color: #FCBA7F;
+        }
+
+        #html-skill {
+            width: 92%;
+            background-color: #E97520;
+        }
+
+        #css-skill {
+            width: 90%;
+            background-color: #cba2e0;
+        }
+
+        #dsa-skill {
+            width: 85%;
+            background-color: #0EAAB8;
+        }
+
+        #js-skill {
+            width: 95%;
+            background-color: #92ecff;
+        }
+
+        #ps-skill {
+            width: 80%;
+            background-color: #56DF6D;
+        }
+
+        #premiere-skill {
+            width: 40%;
+            background-color: #7295FA;
+        }
+
+        #ae-skill {
+            width: 50%;
+            background-color: #FF86BC;
+        }
+
+
+        /*Experience*/
+
+        #experience h2,
+        #experience h3,
+        #education h4,
+        #education h5,
+        #education h6,
+        #education p {
+            margin: 0;
+        }
+
+        .exp-container {
+            /*border: 2px dashed grey;*/
+            width: 60%;
+            height: auto;
+            position: relative;
+            left: -4%;
+        }
+
+        .exp-timeline-box {
+            /*border: 2px solid red;*/
+
+            /*height: 170px;*/
+            width: 50%;
+            margin-bottom: 6%;
+            position: relative;
+        }
+
+        .exp-header {
+            /*border: 2px solid green;*/
+
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .exp-logo {
+            /*border:2px solid black;*/
+            height: 90%;
+            width: 12%;
+            margin-left: 10px;
+        }
+
+        .exp-logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .exp-degination {
+            /*border: 2px solid pink;*/
+            height: auto;
+            width: 60%;
+            font-size: 1em;
+            color: #2857a4;
+            text-align: right;
+            padding: 3%;
+            padding-right: 0;
+        }
+
+        .exp-company {
+            /*border: 2px solid black;*/
+            text-align: right;
+            font-size: 1.04em;
+            /*margin-top: 3px;*/
+        }
+
+        .exp-company h3 {
+            color: #eb822d;
+        }
+
+        .exp-company-margin {
+            margin-top: -4%
+        }
+
+        .exp-company h3 {
+            font-weight: 100;
+        }
+
+        .exp-time {
+            /*border: 2px solid black;*/
+            text-align: right;
+            font-size: 0.948em;
+            color: grey;
+            margin-top: 1%;
+        }
+
+        .exp-time h4 {
+            font-weight: 100;
+        }
+
+        .exp-details {
+            /*border: 2px solid black;*/
+            margin: 0;
+            color: grey;
+            line-height: 20px;
+            font-size: 0.86em;
+            color: grey;
+            margin-top: 2%;
+        }
+
+        .exp-smaller-img {
+            width: 150% !important;
+        }
+
+        .exp-timeline-box:nth-child(even) {
+            left: 65%;
+        }
+
+        .exp-timeline-box:nth-child(even):before {
+            content: '';
+            position: absolute;
+            left: -15.45%;
+            top: 32%;
+
+            width: 0.9em;
+            height: 0.9em;
+            background-color: lightgrey;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .exp-timeline-box:nth-child(odd):after {
+            content: '';
+            position: absolute;
+            right: -16.5%;
+            top: 30%;
+
+            width: 0.9em;
+            height: 0.9em;
+            background-color: lightgrey;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /*Experience Timeline-Divider*/
+        .exp-timeline-divider {
+            position: absolute;
+            top: 10%;
+            left: 58%;
+            border: 1px dashed #0096fa6b;
+            width: 0;
+            height: 66%;
+        }
+
+        .exp-timeline-divider .timeline-traveller {
+            position: sticky;
+            top: 135px;
+            z-index: 2;
+        }
+
+        .exp-timeline-divider i {
+            transform: rotate(90deg);
+            margin-top: -35px;
+            display: block;
+            color: #2857a4;
+            font-size: 2em;
+        }
+
+
+        /*Education with all values 2*/
+
+        #education h2,
+        #education h3,
+        #education h4,
+        #education h5,
+        #education h6,
+        #education p {
+            margin: 0;
+        }
+
+        .exp-timeline-divider2 {
+            position: absolute;
+            top: 10%;
+            left: 58%;
+            border: 1px dashed #0096fa6b;
+            width: 0;
+            height: 64%;
+        }
+
+        .exp-timeline-divider2 .timeline-traveller {
+            position: sticky;
+            top: 135px;
+            z-index: 2;
+        }
+
+        .exp-timeline-divider2 i {
+            transform: rotate(180deg);
+            margin-top: -30px;
+            margin-left: 18px;
+            display: block;
+            color: #2857a4;
+            font-size: 2em;
+        }
+
+        .exp-logo2 {
+            /*border:2px solid black;*/
+            height: 90%;
+            width: 18%;
+            margin-left: 10px;
+        }
+
+        .exp-logo2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .exp-smaller-img2 {
+            width: 12% !important;
+        }
+
+        .exp-degination2 {
+            /*border: 2px solid pink;*/
+            height: auto;
+            width: 60%;
+            font-size: 1em;
+            color: #2857a4;
+            text-align: right;
+            padding: 3%;
+            padding-right: 0;
+        }
+
+        .exp-company2 {
+            /*border: 2px solid black;*/
+            text-align: right;
+            font-size: 1.04em;
+            /*margin-top: 3px;*/
+        }
+
+
+        .exp-company2 h3 {
+            color: #eb822d;
+        }
+
+        .exp-company2 h3 {
+            font-weight: 100;
+        }
+
+        .exp-time2 {
+            /*border: 2px solid black;*/
+            text-align: right;
+            font-size: 0.948em;
+            color: grey;
+            margin-top: 1%;
+        }
+
+        .exp-time2 h4 {
+            font-weight: 100;
+        }
+
+        .exp-details2 {
+            /*border: 2px solid black;*/
+            margin: 0;
+            color: grey;
+            line-height: 20px;
+            font-size: 0.86em;
+            color: grey;
+            margin-top: 2%;
+        }
+
+        .exp-timeline-box:nth-child(even) {
+            left: 65%;
+        }
+
+        .exp-timeline-box:nth-child(even):before {
+            content: '';
+            position: absolute;
+            /*left: -20.9%*/
+            top: 32%;
+
+            width: 0.9em;
+            height: 0.9em;
+            background-color: lightgrey;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .exp-timeline-box:nth-child(odd):after {
+            content: '';
+            position: absolute;
+            right: -17.9%;
+            top: 30%;
+
+            width: 0.9em;
+            height: 0.9em;
+            background-color: lightgrey;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Vision */
+        .vision-img {
+            width: 50vw;
+            text-align: center;
+            /* margin: auto; */
+            display: flex;
+            margin: 40px auto;
+        }
+
+        .vision-img:first-child {
+            margin-top: 0;
+        }
+
+
+        /*Portfolio*/
+        #portfolio-title {
+            font-family: sans-serif;
+        }
+
+        .portfolio-container {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+
+            box-sizing: border-box;
+            padding: 6em;
+            padding-top: 0;
+            padding-bottom: 0em;
+        }
+
+        .portfolio-image-container {
+            height: 18em;
+            width: 18em;
+            margin: 1em;
+            margin-bottom: 3em;
+            position: relative;
+        }
+
+        .portfolio-image {
+            height: 100%;
+            width: 100%;
+        }
+
+        .portfolio-details {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            /*height: 93%;*/
+            /*width: 93%;*/
+            color: transparent;
+            text-align: center;
+            padding: 10px;
+            font-size: 2em;
+            font-family: arial;
+            font-weight: bold;
+
+
+            /*For Vertically Center*/
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .portfolio-image-container:hover .portfolio-details {
+            /*color: white;*/
+            color: #ffffffb8;
+            -webkit-text-stroke: 1px black;
+        }
+
+        .portfolio-image-container:hover {
+            background-color: rgba(0, 0, 0, 30%);
+            /*background-color: #80808078;*/
+            box-shadow: 0 0 30px black;
+        }
+
+
+
+        /*Contact*/
+
+        /*Feedback Column*/
+        #contact {
+            height: auto;
+            width: 100vw;
+            background:
+                linear-gradient(to top right, #2857a4, #403066 70%);
+            font-family: sans-serif;
+        }
+
+        .contact-section-header {
+            color: white;
+        }
+
+        #contact-container {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 5%;
+        }
+
+        .contact-sections-container {
+            height: auto;
+            width: 41%;
+            /*background-color: red; */
+            /*border: 2px solid black;*/
+            padding: 12px;
+            /*overflow: hidden;*/
+        }
+
+        .contact-form-input-box {
+            display: block;
+            width: 100%;
+            margin-bottom: 7%;
+            border: 0;
+            border-bottom: 2px solid white;
+            background: transparent;
+            outline: none;
+            color: #d9dcdd;
+            font-size: 1.05em;
+        }
+
+        #send-message {
+            background: transparent;
+            font-size: 0.95em;
+            border: 2px solid white;
+            margin-top: 5%;
+            border-radius: 2px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.046875em;
+            line-height: 1;
+            padding: 0.8em 0.8em 0.78em;
+            text-transform: uppercase;
+
+            /*margin-left: 25%;*/
+            /*margin-right: 25%;*/
+            overflow-wrap: break-word;
+
+        }
+
+        #send-message:hover {
+            background-color: white;
+            color: #13386fe0;
+        }
+
+        #message-input {
+            font-family: sans-serif;
+            /*font-size: 1.05em;*/
+            margin-top: 6%;
+        }
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7%;
+        }
+
+
+        /*About Us Column*/
+        .contact-sections-container {
+            color: white;
+            font-family: sans-serif;
+            font-weight: 0;
+        }
+
+        .about-us-title {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 2%;
+            margin-bottom: 0;
+        }
+
+        #about-us p {
+            font-size: 1em;
+            color: #d9dcdd;
+        }
+
+        .contact-address {
+            margin-top: 2%;
+        }
+
+        .contact-address p {
+            margin: 0;
+            margin-top: 2%;
+            margin-bottom: 1.5%;
+            display: inline-block;
+        }
+
+        .address-title {
+            margin-top: 5%;
+        }
+
+        /*Social Columns*/
+        #social-icons-bottom i {
+            font-size: 1.3em;
+            margin-bottom: 10vh;
+        }
+
+
+
+
+
+        /*Responsiveness*/
+
+        /*iPad*/
+
+        @media screen and (max-width: 768px) {
+
+
+            /*Work Experience*/
+
+            .exp-container {
+                /*border: 2px dashed grey;*/
+                width: 80%;
+                height: auto;
+                position: relative;
+                /*left: 15%;*/
+            }
+
+            .exp-timeline-box {
+                left: 20%;
+                width: 75%;
+            }
+
+            .exp-timeline-box:nth-child(even) {
+                left: 20%;
+            }
+
+            .exp-timeline-box:nth-child(odd):after {
+                width: 0;
+            }
+
+            .exp-timeline-box:nth-child(odd):before {
+                content: '';
+                position: absolute;
+                left: -15.45%;
+                top: 32%;
+
+                width: 0.9em;
+                height: 0.9em;
+                border-radius: 50%;
+                background-color: lightgrey;
+                z-index: 1;
+            }
+
+
+            .exp-timeline-divider {
+                position: absolute;
+                top: 10%;
+                left: 9.5%;
+                border: 1px dashed #0096fa6b;
+                width: 0;
+                height: 66%;
+            }
+
+            .exp-timeline-divider2 {
+                position: absolute;
+                top: 10%;
+                left: 9.5%;
+                border: 1px dashed #0096fa6b;
+                width: 0;
+                height: 66%;
+            }
+
+            .skill-name {
+                padding: 1.5% !important;
+            }
+
+            #my-name {
+                margin-top: 14%
+            }
+
+        }
+
+        /*Mobile*/
+
+        @media screen and (max-width: 572px) {
+
+            .contact-sections-container {
+                height: auto;
+                width: 60%;
+                margin-top: 6%;
+            }
+
+            .section-header {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+
+            .skill-name {
+                padding: 1.7%;
+            }
+
+            #my-name {
+                margin-top: 19%;
+                font-size: 3em;
+            }
+
+            /*dropdown*/
+            #horizontalList .horizontal-list-item {
+                display: none;
+            }
+
+            nav {
+                position: relative;
+                top: 7%;
+            }
+
+            #dropdown-container {
+                display: inline-block;
+            }
+
+            /* Vision */
+            .vision-img {
+                width: 90vw;
+                margin: 20px auto;
+            }
+
+        }
+    </style>
+
+
+    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101231723);</script>
+    <script async src="//static.getclicky.com/js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156435028-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156435028-1');
+    </script>
+
+
+</head>
+
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <div id="dropdown-container">
+
+                <div id="dropdown-icon">
+                    <i class="fas fa-bars" id="bars"></i>
+                </div>
+
+                <div id="dropdown-menu">
+                    <ul>
+                        <li>
+                            <a href="#body-header">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+
+                        <li>
+                            <a href="#vision">Vision</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                </div> <!-- List -->
+
+            </div> <!-- Outer Container -->
+
+            <div>
+                <ul id="horizontalList" class="horizontal-list">
+                    <li class="horizontal-list-item"> <a href="#body-header">Home</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#about">About</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#skills">Skills</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#experience">Experience</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#education">Education</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#vision">Vision</a></li>
+
+                    <li class="horizontal-list-item"> <a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <h1 id="my-name">Jay Prakash Mahto</h1>
+
+        <!-- Socaial -->
+        <ul id="social" class="horizontal-list">
+            <li class="horizontal-list-item">
+                <a href="https://wa.me/919835582472?text=Hi Jay!!" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+
+            <li class="horizontal-list-item">
+                <a href="https://www.facebook.com/JVJplus" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li class="horizontal-list-item">
+                <a href="https://www.instagram.com/JVJplus" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="horizontal-list-item">
+                <a href="https://github.com/JVJplus" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li class="horizontal-list-item">
+                <a href="https://profile.codingninjas.in/b38c7b90-7719-418b-8211-a9468ae7001b" target="_blank">
+                    <i class="fas fa-user-ninja"></i>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+        <div id="dp-div">
+            <!-- <img id="dp" src="images/dp.jpeg"> -->
+            <a href="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/dp2.jpg" target="_blank">
+                <img id="dp" src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/dp2.jpg">
+            </a>
+        </div>
+
+        <section id="about-container">
+            <!-- <p class="about-para">
+                    I am Programming Enthusiast and have immense Interest in Learning New Upcoming Technologies. Currently Learning Full Stack Web Development and Planned to learn Machine Learning and Data Science later.
+                </p> -->
+            <div id="about">
+                <p class="about-para">
+                    <span> Hi, </span> I am 19 years amateur, Living in Jamshedpur.
+                </p>
+
+                <p class="about-para">
+                    Since Childhood I am an <span>Computer Enthusiast</span>, Die-Heart <span>Programmer</span> And
+                    <span>Graphics Designer</span>. Also have immense Interest in Learning New Upcoming Technologies.
+                </p>
+
+                <p class="about-para">
+                    Now totally obsessed with <span>Android & Guitar</span>.
+                </p>
+
+                <p class="about-para">
+                    As a side work, had tried hands on Guitar, Competitive Programming, Dance(will).
+                </p>
+
+                <p class="about-para">
+                    Currently looking for projects and internship based on <span>Android & Web Development</span> to
+                    test my knowledge and boost experience.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="skills">
+
+            <div class="section-header">
+                <i class="fas fa-chalkboard-teacher">
+                    <span>Skills</span>
+                </i>
+
+            </div>
+
+
+            <div class="skills-display">
+
+                <div class="behind-box">
+                    <div id="cpp-skill" class="upper-box">
+                        <span class="skill-name">
+                            C++
+                        </span>
+                    </div>
+                </div>
+
+                <div class="behind-box">
+                    <div id="dsa-skill" class="upper-box">
+                        <span class="skill-name">
+                            DS & ALGO
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="behind-box">
+                    <div id="html-skill" class="upper-box">
+                        <span class="skill-name">
+                            HTML &amp; CSS
+                        </span>
+                    </div>
+                </div>
+
+                <div class="behind-box">
+                    <div id="css-skill" class="upper-box">
+                        <span class="skill-name">
+                            Typing 75wpm
+                        </span>
+                    </div>
+                </div>
+
+                <div class="behind-box">
+                    <div id="js-skill" class="upper-box">
+                        <span class="skill-name">
+                            JavaScript
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="behind-box">
+                    <div id="ps-skill" class="upper-box">
+                        <span class="skill-name">
+                            Photoshop
+                        </span>
+                    </div>
+                </div>
+
+                <div class="behind-box">
+                    <div id="premiere-skill" class="upper-box">
+                        <span class="skill-name">
+                            Illustrator
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="behind-box">
+                    <div id="ae-skill" class="upper-box">
+                        <span class="skill-name">
+                            Android
+                        </span>
+                    </div>
+                </div>
+
+            </div> <!-- Skill Display ka -->
+        </section> <!--  Skills Ka -->
+
+
+        <section id="experience">
+
+            <h1 class="section-header">
+                <span>
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <span> Work Experience </span>
+            </h1>
+
+            <div class="exp-container">
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo" style="margin-top: 10px ">
+                            <img
+                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+
+                        <div class="exp-degination">
+                            <h2>Teaching Assistant </h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company2" style="margin-top: -2%">
+                        <a style="text-decoration: none" href="https://www.codingninjas.in/" target="_blank">
+                            <h3>Coding Ninjas</h3>
+                        </a>
+                    </div> <!-- Company -->
+
+                    <div class="exp-time">
+                        <h4> May 2019 - 2019</h4>
+                    </div>
+
+                    <div class="exp-details">
+                        <p>Helped Students to clear their doubt on the Online Data Structures Course Provided by Coding
+                            Ninjas on their website.
+                            <br>
+                            <br>
+                            Solved More Than 1000 doubts from students with average ratings of 4.6 out of 5.
+
+                        </p>
+                    </div> <!-- exp-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo">
+                            <img class="exp-smaller-img"
+                                src="https://raw.githubusercontent.com/JVJplus/resume/master/images/JVJplus%20colours%20logo.png">
+                        </div>
+
+                        <div class="exp-degination" style="padding: 0">
+                            <h2>CEO & Founding Member</h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company" style="margin-top: 2%">
+                        <a style="text-decoration: none;" href="https://www.JVJplus.com/" target="_blank">
+                            <h3>JVJplus</h3>
+                        </a>
+                    </div> <!-- Company -->
+
+                    <div class="exp-time">
+                        <h4>Month YYYY - Month YYYY</h4>
+                    </div>
+
+                    <div class="exp-details">
+                        <p>
+                            Company Isn't yet started :P.
+                            <br>
+                            <br>
+                            But When it will i have that position. Basically it will be related to something related to
+                            computer only.
+                        </p>
+                    </div> <!-- exp-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo">
+                            <!-- <img src="https://i.ibb.co/HXbSWkX/jvj-logo-new.png"> -->
+
+                            <!-- <img src="https://i.ibb.co/Z14vP7t/jvj-logo-final.png"> -->
+
+                            <img class="exp-smaller-img"
+                                src="https://raw.githubusercontent.com/JVJplus/resume/master/images/JVJplus%20colours%20logo.png">
+
+                        </div>
+
+                        <div class="exp-degination">
+                            <h2>Administrator</h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company exp-company-margin">
+                        <a style="text-decoration: none" href="#" target="_blank">
+                            <h3>This Website</h3>
+                        </a>
+                    </div> <!-- Company -->
+
+                    <div class="exp-time">
+                        <h4>June 2019 - Till Date </h4>
+                    </div>
+
+                    <div class="exp-details">
+                        <p>So I dont have any else experience to fill up this section.
+                            <br>
+                            <br>
+                            It took me around a month to develop the 1st starting page of this site. Starting from HTML,
+                            CSS the whole page is made of it by date 09-06-2019. Will add some other function/features
+                            later.
+                        </p>
+                    </div> <!-- exp-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+                <!-- Timeline Divider -->
+                <div class="exp-timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div> <!-- Timline-Divider -->
+
+            </div> <!-- Container -->
+
+        </section> <!-- Work Experience -->
+
+        <section id="education">
+
+            <h1 class="section-header">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+
+            <div class="exp-container">
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo2" style="margin-top: 10px ">
+                            <img
+                                src="https://github.com/JVJplus/resume/blob/master/images/dav-logo-removebg-preview.png?raw=true">
+                        </div>
+
+                        <div class="exp-degination2">
+                            <h2>Board</h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company " style="margin-top: -7%">
+                        <a style="text-decoration: none" href="http://www.davpatelnagar.com/" target="_blank">
+                            <h3>DAV Public School</h3>
+                        </a>
+                    </div> <!-- Intitution -->
+
+                    <div class="exp-time2">
+                        <h4> 2007 - May 2017 </h4>
+                    </div>
+
+                    <div class="exp-details2">
+                        <p>
+                            Given my board exam from ICSE Board with Science Stream and secured 85.4%. I was also 2nd
+                            school topper. Also I got 99% marks in computer science.
+                        </p>
+                    </div> <!-- edu-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo2" style="width:
+                    15%">
+                            <img src="https://github.com/JVJplus/resume/blob/master/images/vvs%20logo.jpg?raw=true">
+                        </div>
+
+                        <div class="exp-degination2" style="padding: 0">
+                            <h2>Intermediate</h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company2" style="margin-top: -6%">
+                        <a style="text-decoration: none;" href="http://www.valleyviewschooljsr.com/" target="_blank">
+                            <h3>Valley View School</h3>
+                        </a>
+                    </div> <!-- Intitution -->
+
+                    <div class="exp-time2">
+                        <h4>May 2017 - May 2019</h4>
+                    </div>
+
+                    <div class="exp-details2">
+                        <p>
+                            Given my ISC exam from CBSE Board with Science Stream and secured 78.6%.
+                            <br>
+                            <br>
+                            To be honest It was really difficult! :P
+                        </p>
+                    </div> <!-- edu-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+
+                <div class="exp-timeline-box">
+
+                    <div class="exp-header">
+                        <div class="exp-logo2 exp-smaller-img2" style="margin-top: 2%;">
+                            <img
+                                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+
+                        <div class="exp-degination2">
+                            <h2>Online Courses</h2>
+                        </div>
+                    </div> <!-- Header -->
+
+                    <div class="exp-company2" style="margin-top: -3%">
+                        <a style="text-decoration: none" href="https://www.codingninjas.in/" target="_blank">
+                            <h3>Coding Ninjas</h3>
+                        </a>
+                    </div> <!-- Intitution -->
+
+                    <div class="exp-time2">
+                        <h4>2017 - 2021 </h4>
+                    </div>
+
+                    <div class="exp-details2">
+                        <p>
+                            Did Many courses on online sites like udemy, edx etc.
+                            <br>
+                            <br>
+                            Did Data Structures, Competitive Programming, Full Stack Web Development Courses From Coding
+                            Ninjas Website.
+                        </p>
+                    </div> <!-- edu-details -->
+
+                </div> <!-- Timeline-box -->
+
+
+                <!-- Timeline Divider -->
+                <div class="exp-timeline-divider2">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-spider"></i>
+                        </div>
+                    </div>
+                </div> <!-- Timline-Divider -->
+
+            </div> <!-- Container -->
+
+        </section> <!-- Education -->
+
+
+        <section id="portfolio" style="display: none;">
+
+            <div id="portfolio-title" class="section-header">
+                <i class="far fa-image"></i>
+                <span>Portfolio</span>
+            </div>
+
+            <div class="portfolio-container">
+
+                <div id="port1" class="portfolio-image-container">
+                    <!-- <img class="portfolio-image" src="https://i.ibb.co/JrWZj3h/1.jpg"> -->
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%201.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            Green Wave Effect with Horizontal Overlays
+                        </p>
+                    </div>
+                </div>
+
+                <div id="port2" class="portfolio-image-container">
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%202.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            Computer RAM Representing Passion For Computer.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="port3" class="portfolio-image-container">
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%203.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            Earth Axis Representing The Love!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="port4" class="portfolio-image-container">
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%204.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            Old Steel Effect looks Great!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="port5" class="portfolio-image-container">
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%205.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            One of my favourite Blood effects!
+                        </p>
+                    </div>
+                </div>
+
+                <div id="port6" class="portfolio-image-container">
+                    <img class="portfolio-image"
+                        src="https://raw.githubusercontent.com/JVJplus/Resume-Webpage/master/images/Portfolio/img%206.jpg">
+                    <div class="portfolio-details">
+                        <p>
+                            Hmm Random Text overlay over image!
+                        </p>
+                    </div>
+                </div>
+
+            </div> <!-- Port Disp -->
+        </section> <!-- Portfolio -->
+
+        <section id="vision" style="background-color: white;">
+
+            <h1 class="section-header">
+                <span>
+                    <!-- <i class="fa-solid fa-bullseye-arrow"></i> -->
+                    <i class="fas fa-bullseye"></i>
+                </span>
+                <span> Vision </span>
+            </h1>
+
+            <div class="exp-container vision-container">
+                <img src="./images/person-using-desktop.jpeg" class="vision-img" alt="">
+                <p>2026: Jayprakash is a well-known influencer, entrepreneur and digital marketing expert in the
+                    country. During the past 4-5 years, his presence has grown exponentially.</p>
+                <p>As of today, he has:</p>
+                <p>
+                <ul>
+                    <li>his own digital marketing agency (Digital JVJplus), which serves many of India's most
+                        popular companies. The clients he has worked with include some international clients, and he is
+                        well appreciated by them all.</li>
+                    <li>courses on "Affiliate Marketing" and "Wordpress" which were taken by more than 10,000 students. Each
+                        day, the number of students is growing.</li>
+                    <li>An online coupon, review, and blog site which receives more than 10,000 visitors every day. He
+                        has an email list of more than 1,00,000 subscribers. He has YouTube channels with over 50,000
+                        subscribers. His channels cover topics such as growth hacking, SEO, digital marketing, and
+                        entrepreneurship.</li>
+                    <li>
+                        Google ads which are being run with a budget of more than 1 crore.
+                    </li>
+                    <li>
+                        Portfolio of 1 crore, giving him an average CAGR of 15%.
+                    </li>
+<!--                     <li> -->
+<!-- Add consulting servicing on coding carrers and paths.                      -->
+<!--                     </li> -->
+                </ul>
+                </p>
+                <img src="./images/passive-income.png" class="vision-img" alt="">
+                <p>Jayprakash has multiple income streams and earns more than Rs 10,00,000 month after month passively
+                    from his digital assets, courses, and various digital marketing channels.</p>
+
+                <img src="./images/team.jpeg" class="vision-img" alt="">
+                <p>Jay worked hard to build his empire from his home while he lived with his family. Now he leads a team
+                    of ten people who help him run his business from home. Each employee is treated as a partner.</p>
+
+                <!-- <img src="./images/world tour.jpeg" class="vision-img" alt=""> -->
+                <img src="./images/world tour 2.jpeg" class="vision-img" alt="">
+                <p>Right now, he is travelling the world with his college crush, who has now become his fiancee.
+                </p>
+
+                <img src="./images/happy-family-gardening-sunny-day-54256280.jpeg" class="vision-img" alt="">
+                <p>He told his mother to take early retirement as he is able to handle the family and doesn't want to
+                    see his mother working. His mother is living the best life she can. In addition, he asked his
+                    brother to resign from his 9-5 industry work in order to work with Jay.</p>
+                <img src="./images/home.jpeg" class="vision-img" alt="">
+                <p>Jay now has a dream house of his own. This is after 26 years of living without one.</p>
+
+                <br>
+                <hr>
+                <p style="color:grey">
+                    This is an assignment for the Digital Deepak Internship program. Check out about it over
+                    <a href="https://digitaldeepak.com/digital-deepak-internship-program">here</a>.
+                    <br>
+                    <br>
+                    I really loved the idea behind this assignment - to publish your vision / version 2.0 in a public
+                    domain and share it with your peers.
+                    <br>
+                    <br>
+                    <i>"When we announce our dreams in public, we are more likely
+                        to
+                        achieve them".</i>
+                    <br><br>
+                    Last updated: 04/04/2022
+                </p>
+                <br><br>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="section-header contact-section-header">
+                <i class="far fa-address-card"></i>
+                <span>Contact</span>
+            </div> <!-- Headings -->
+
+            <div id="contact-container">
+
+                <div id="feedback" class="contact-sections-container">
+
+                    <form class="feedback-form" action="mailto:jvjplus@gmail.com" method="GET">
+                        <input type="text" name="Name" placeholder="Your Name" class="
+                contact-form-input-box">
+                        <input type="email" name="Email" placeholder="Your Email" class="contact-form-input-box">
+                        <!-- <input type="text" name="Message" placeholder="Message" class="contact-form-input-box" required="" id="message-input"> -->
+
+                        <textarea id="message-input" class="contact-form-input-box" placeholder="Message"></textarea>
+
+                        <!--   <input type="submit" name="Send Message" value="SEND MESSAGE" id="send-message"> -->
+                        <button type="submit" name="Send Message" value="" id="send-message">SEND MESSAGE</button>
+                    </form>
+
+
+                </div> <!-- 1st column -->
+
+
+                <div id="about-us" class="contact-sections-container">
+                    <span>
+                        <h4 class="about-us-title">
+                            Get In Touch
+                        </h4>
+                    </span>
+
+                    <span>
+                        <p>
+                            For any kind of help, doubts, questions etc related to computer, programming, designing,
+                            music.
+                            <br>
+                            <br>
+                            I am be found offline ofcourse, apart from it I am available on major social sites.
+                        </p>
+                    </span>
+
+                    <span>
+                        <h4 class="about-us-title address-title">
+                            My Address
+                        </h4>
+                    </span>
+
+                    <div class="contact-address">
+
+                        <div>
+                            <a href="https://goo.gl/maps/eSfpCDVmc972PaBr8" target="_blank">
+                                <i style="color: white;" class="fas fa-map-marker-alt"></i>
+                                <p>&nbsp;Telco, Jamshedpur, Jharkhand</p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://wa.me/919835582472?text=Hi Jay!!" target="_blank">
+                                <i style="color: white;" class="fas fa-mobile-alt"></i>
+                                <p>&nbsp;9835582472</p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="mailto:jvjplus@gmail.com?Subject=Hello" target="_top">
+                                <i style="color: white;" class="far fa-envelope"></i>
+                                <p>&nbsp;jvjplus@gmail.com</p>
+                            </a>
+                        </div>
+
+                    </div> <!-- Contact us column -->
+
+                </div> <!-- About Us Column -->
+
+            </div> <!-- Contact-Container -->
+
+
+            <div id="social-icons-bottom">
+                <ul id="social" class="horizontal-list">
+                    <li class="horizontal-list-item">
+                        <a href="https://wa.me/919835582472?text=Hi Jay!!" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+
+                    <li class="horizontal-list-item">
+                        <a href="https://www.facebook.com/JVJplus" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li class="horizontal-list-item">
+                        <a href="https://www.instagram.com/JVJplus" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="horizontal-list-item">
+                        <a href="https://github.com/JVJplus" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li class="horizontal-list-item">
+                        <a href="https://profile.codingninjas.in/b38c7b90-7719-418b-8211-a9468ae7001b" target="_blank">
+                            <i class="fas fa-user-ninja"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- Social Icons  -->
+        </section>
+
+
+
+
+    </main>
+</body>
+
+</html>
+
+
+
+<!--
+
+            TODO:
+
+    // 1) Add links to images and text -
+    2) Add achievements section
+    3) Add Years wise slider
+    4) Responsive
+    5) Add AACHA Portfolio
+
+
+    -->
+
+
+
+<!--
+        background-image attachement problem fix karo!
+    -->
